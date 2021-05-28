@@ -8,12 +8,12 @@ const User = require('./models/users.js');
 
 const facebookLoginUrl = 'https://graph.facebook.com/v10.0/oauth/access_token';
 const remoteAPI = 'https://graph.facebook.com/me';
-const REDIRECT_URI='http://localhost:3000/oauth'
+const REDIRECT_URI='https://tamara-facebook-auth.herokuapp.com/oauth'
 
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-// const REDIRECT_URI = process.env.REDIRECT_URI;
+
 
 
 module.exports= async (req,res,next)=>{
